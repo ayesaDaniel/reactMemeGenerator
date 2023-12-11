@@ -1,0 +1,21 @@
+.nav__container{
+    display: flex;
+   height: 20vh;
+   margin-top: 0;
+   padding: 10px;
+    background-color: rgba(170, 65, 170, 0.886);
+    font-family: Tahoma, sans-serif;
+    color: whitesmoke;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 20px;
+
+    &-title{
+       margin-right: auto;
+        font-size: 27px;
+    }
+    &-text{
+        font-weight: 500;
+        padding-top: 5px;
+    }
+}
