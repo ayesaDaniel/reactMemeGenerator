@@ -11,11 +11,19 @@ export default function Form(){
      "http://i.imgflip.com/1bij.jpg"
  })
  const [allMeme, setAllMeme] = useState([])
+ const [loading, setLoading] = useState(true);
+ const [error, setError] = useState(null);
 
  useEffect(() => {
   fetch("https://api.imgflip.com/get_memes")
   .then(res =>res.json())
-  .then(data =>setAllMeme(data.data.memes)) 
+  .then(data =>{setAllMeme(data.data.memes)
+    setLoading(false)
+  }) 
+  .catch(error => {
+    setError(error);
+    setLoading(false);
+  })
 }, [])
   
 
@@ -40,7 +48,8 @@ function handleChange(event){
     }))
 }
 
-
+if (loading) return <p className="loading">Loading...</p>;
+if (error) return <p className="loading">Error: {error.message}</p>;
 
     return(
         <main>

@@ -5,7 +5,7 @@ export default function nav(){
      <>
      <div className="nav__container">
         <h1 className="nav__container-title">Meme Generator</h1>
-        <h3 className="nav__container-text"> React Course-Project3</h3>
+        {/* <h3 className="nav__container-text"> Buil</h3> */}
       </div>
       </>
     )

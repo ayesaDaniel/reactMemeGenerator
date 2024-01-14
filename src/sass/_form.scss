@@ -9,6 +9,29 @@ grid-template:40px 40px / 1fr 1fr;
     text-indent: 5px;
   }
 }
+
+.loading{
+  font-size: large;
+  font-style: italic;
+  font-weight: bolder;
+  margin: auto;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.error{
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bolder;
+  margin: auto;
+  color: red;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 .form__button{
     grid-column: 1 / -1;
     font-size: 15px;
@@ -26,6 +49,13 @@ main{
 
  .meme__image{
    max-width: 100%;
+   height: 80vh;
+   width: 180vh;
+   margin: auto;
+   align-items: center;
+   text-align: center;
+   display: flex;
+  
  }
 
  .meme{
@@ -41,8 +71,11 @@ main{
     top: 10px;
   padding-left: 80px;
   font-size: 50px;
-  color: whitesmoke;
- 
+  color: black;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+ margin-left: auto;
   }
 
   &__text-bottom{
@@ -50,6 +83,8 @@ main{
     text-align: center;
     padding-left: 80px;
     font-size: 50px;
-    color: whitesmoke;
+    color: black;
+    align-items: center;
+    text-align: center;
   }
  }
